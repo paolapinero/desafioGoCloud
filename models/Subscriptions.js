@@ -9,7 +9,7 @@ class Subscriptions extends DynamoBase{
   
     create(data = {}) {
         const params = {
-            TableName: this.table,
+            TableName: this.TableName,
             Item: {
                 ...data
             },
